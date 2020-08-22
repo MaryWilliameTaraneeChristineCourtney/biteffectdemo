@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+  width: 100%;
+  height:100%;
+  top: 0;
+  margin: 0;
+  position: absolute;
+  display: inline;
+  overflow:hidden;
+}
+
+#alpha {
+	top: 0;
+	width: 400%;
+	left: -150%;
+	height: 100%;
+	padding: 0;
+	z-index: 5; 
+	margin: 0;
+	position: absolute;
+	pointer-events: none;
+	display:inline;
+	text-align: center;
+}
+
+iframe {
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	width:100%;
+	max-width: 100%;
+	height:100%;
+	max-height: 100%;
+}
+#beta { 
+	top: 0; 
+	z-index: 10;
+	margin: 0;
+	position: absolute;
+	display: inline;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/* customizable snowflake styling */
+.snowflake {
+	  
+	}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(-5%);transform:translateX(-5%)}50%{-webkit-transform:translateX(5%);transform:translateX(5%)}}
+@-webkit-keyframes snowflakes-spin{0%{transform: rotate(0deg);transform-origin: 50% 50%}100%{transform: rotate(360deg);transform-origin: 50% 50%}}
+
+
+@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+@keyframes snowflakes-shake{0%,100%{transform:translateX(-5%)}50%{transform:translateX(5%)}}
+@keyframes snowflakes-spin{0%{transform: rotate(0deg);transform-origin: 50% 50%}100%{transform: rotate(360deg);transform-origin: 50% 50%}}
+
+.snowflake{
+	position:fixed;
+	top:-10%;
+	z-index:3;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	cursor:default;
+	-webkit-animation-name:snowflakes-fall,snowflakes-shake,snowflakes-spin;
+	-webkit-animation-duration:2.75s,3s,3.5s;
+	-webkit-animation-timing-function:cubic-bezier(1,0,1,0),ease-in-out,linear;
+	-webkit-animation-iteration-count:infinite,infinite,infinite;
+	/*-webkit-animation-play-state:running,running,running;*/
+	animation-name:snowflakes-fall,snowflakes-shake,snowflakes-spin;
+	animation-duration:2.75s,3s,3.5s;
+	animation-timing-function:cubic-bezier(1,0,1,0),ease-in-out,linear;
+	animation-iteration-count:infinite,infinite,infinite;
+	/*animation-play-state:running,running,running;*/
+	pointer-events: none;
+}
+
+.snowflakes {
+	display: inline;
+	pointer-events: none;
+}
+
+
+
+.snowflake:nth-of-type(0){left:5%;-webkit-animation-delay:0s,0s,0s;animation-delay:0s,0s,0s;}
+.snowflake:nth-of-type(1){left:2.5%;-webkit-animation-delay:1.75s,0s,1s;animation-delay:1.75s,0s,1s;}
+.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:1.25s,1s,0s;animation-delay:1.25s,1s,0s;}
+.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:1s,0s,1s;animation-delay:1s,0s,1s;}
+.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:.25s,1s,0s;animation-delay:.25s,1s,0s;}
+.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:1.125s,0s,1s;animation-delay:1.125s,0s,1s;}
+.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:1.875s,1s,0s;animation-delay:1.875s,1s,0s;}
+.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:0.625s,0s,1s;animation-delay:0.625s,0s,1s;}
+.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:0s,1s,0s;animation-delay:0s,1s,0s;}
+.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:.75s,0s,1s;animation-delay:.75s,0s,1s;}
+.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:0s,1s,0s;animation-delay:0s,1s,0s;}
+.snowflake:nth-of-type(11){left:85%;-webkit-animation-delay:1.25s,0s,1s;animation-delay:1.25s,0s,1s;}
+.snowflake:nth-of-type(12){left:75%;-webkit-animation-delay:1.625s,1s,0s;animation-delay:1.625s,1s,0s;}
+.snowflake:nth-of-type(13){left:90%;-webkit-animation-delay:3s,0s,1s;animation-delay:3s,0s,1s;}
+.snowflake:nth-of-type(14){left:55%;-webkit-animation-delay:2.25s,1s,0s;animation-delay:2.25s,1s,0s;}
+.snowflake:nth-of-type(15){left:5%;-webkit-animation-delay:1s,0s,1s;animation-delay:1s,0s,1s;}
+.snowflake:nth-of-type(16){left:35%;-webkit-animation-delay:.625s,1s,0s;animation-delay:.625s,1s,0s;}
+.snowflake:nth-of-type(17){left:25%;-webkit-animation-delay:.5s,0s,1s;animation-delay:.5s,0s,1s;}
+.snowflake:nth-of-type(18){left:15%;-webkit-animation-delay:.75s,1s,0s;animation-delay:.75s,1s,0s;}
+.snowflake:nth-of-type(19){left:75%;-webkit-animation-delay:1s,0s,1s;animation-delay:1s,0s,1s;}
+.snowflake:nth-of-type(20){left:75%;-webkit-animation-delay:.875s,1s,0s;animation-delay:.875s,1s,0s;}
+.snowflake:nth-of-type(21){left:90%;-webkit-animation-delay:.25s,0s,1s;animation-delay:.25s,0s,1s;}
+.snowflake:nth-of-type(22){left:85%;-webkit-animation-delay:1.75s,1s,0s;animation-delay:1.75s,1s,0s;}
+.snowflake:nth-of-type(23){left:65%;-webkit-animation-delay:2.5s,0s,1s;animation-delay:2.5s,0s,1s;}
+.snowflake:nth-of-type(24){left:75%;-webkit-animation-delay:0s,1s,0s;animation-delay:0s,1s,0s;}
+.snowflake:nth-of-type(25){left:70%;-webkit-animation-delay:2s,0s,1s;animation-delay:2s,0s,1s;}
+.snowflake:nth-of-type(26){left:65%;-webkit-animation-delay:.75s,1s,0s;animation-delay:.75s,1s,0s;}
+.snowflake:nth-of-type(27){left:60%;-webkit-animation-delay:.625s,0s,1s;animation-delay:.625s,0s,1s;}
+.snowflake:nth-of-type(28){left:55%;-webkit-animation-delay:.75s,1s,0s;animation-delay:.75s,1s,0s;}
+.snowflake:nth-of-type(29){left:50%;-webkit-animation-delay:.25s,.75s,1s;animation-delay:.25s,.75s,1s;}
+.snowflake:nth-of-type(30){left:45%;-webkit-animation-delay:.5s,0s,0s;animation-delay:.5s,0s,0s;}
+.snowflake:nth-of-type(31){left:40%;-webkit-animation-delay:1.5s,.0s,1s;animation-delay:1.5s,.0s,1s;}
+.snowflake:nth-of-type(32){left:35%;-webkit-animation-delay:.875s,1s,0s;animation-delay:.875s,1s,0s;}
+.snowflake:nth-of-type(33){left:50%;-webkit-animation-delay:2.25s,0s,1s;animation-delay:2.25s,0s,1s;}
+.snowflake:nth-of-type(34){left:50%;-webkit-animation-delay:2s,1s,0s;animation-delay:2s,1s,0s;}
+.snowflake:nth-of-type(35){left:20%;-webkit-animation-delay:1.75s,0s,1s;animation-delay:1.75s,0s,1s;}
+.snowflake:nth-of-type(36){left:10%;-webkit-animation-delay:.625s,1s,0s;animation-delay:.625s,1s,0s;}
+.snowflake:nth-of-type(37){left:10%;-webkit-animation-delay:.5s,0s,1s;animation-delay:.5s,0s,1s;}
+.snowflake:nth-of-type(38){left:1%;-webkit-animation-delay:.25s,1s,0s;animation-delay:.25s,1s,0s;}
+.snowflake:nth-of-type(39){left:65%;-webkit-animation-delay:2.125s,0s,1s;animation-delay:2.125s,0s,1s;}
+.snowflake:nth-of-type(40){left:75%;-webkit-animation-delay:.25s,1s,0s;animation-delay:.25s,1s,0s;}
+.snowflake:nth-of-type(41){left:5%;-webkit-animation-delay:.5s,0s,1s;animation-delay:.5s,0s,1s;}
+.snowflake:nth-of-type(42){left:10%;-webkit-animation-delay:2.5s,1s,0s;animation-delay:2.5s,1s,0s;}
+.snowflake:nth-of-type(43){left:15%;-webkit-animation-delay:2s,0s,1s;animation-delay:2s,0s,1s;}
+.snowflake:nth-of-type(44){left:20%;-webkit-animation-delay:3s,1s,0s;animation-delay:3s,1s,0s;}
+.snowflake:nth-of-type(45){left:25%;-webkit-animation-delay:1.25s,0s,1s;animation-delay:1.25s,0s,1s;}
+.snowflake:nth-of-type(46){left:30%;-webkit-animation-delay:2.25s,1s,0s;animation-delay:2.25s,1s,0s;}
+.snowflake:nth-of-type(47){left:35%;-webkit-animation-delay:1.25s,0s,1s;animation-delay:1.25s,0s,1s;}
+.snowflake:nth-of-type(48){left:40%;-webkit-animation-delay:.5s,1s,0s;animation-delay:.5s,1s,0s;}
+.snowflake:nth-of-type(49){left:45%;-webkit-animation-delay:1.75s,0s,1s;animation-delay:1.7s,0s,1s;}
+.snowflake:nth-of-type(50){left:50%;-webkit-animation-delay:0s,1s,0s;animation-delay:0s,1s,0s;}
+/*.snowflake:nth-of-type(51){left:55%;-webkit-animation-delay:1s,1s,1s;animation-delay:1s,1s,1s;}
+.snowflake:nth-of-type(52){left:60%;-webkit-animation-delay:6s,.5s,1s;animation-delay:6s,.5s,1s;}
+.snowflake:nth-of-type(53){left:65%;-webkit-animation-delay:4s,2s,11s;animation-delay:4s,2s,11s;}
+.snowflake:nth-of-type(54){left:70%;-webkit-animation-delay:2s,2s,0s;animation-delay:2s,2s,0s;}
+.snowflake:nth-of-type(55){left:75%;-webkit-animation-delay:8s,3s,21s;animation-delay:8s,3s,21s;}
+.snowflake:nth-of-type(56){left:80%;-webkit-animation-delay:6s,2s,0s;animation-delay:6s,2s,0s;}
+.snowflake:nth-of-type(57){left:85%;-webkit-animation-delay:2.5s,1s,11s;animation-delay:2.5s,1s,11s;}
+.snowflake:nth-of-type(58){left:90%;-webkit-animation-delay:1s,0s,1s;animation-delay:1s,0s,1s;}
+.snowflake:nth-of-type(59){left:95%;-webkit-animation-delay:3s,1.5s,1s;animation-delay:3s,1.5s,.5s;}*/
+
+
+@media screen and (orientation:portrait) and (max-width: 425px) and (min-width: 320px)and (max-height: 800px){
+	#alpha { 
+		top: 0;
+		width: 200%;
+		left: -50%;
+		height: 100%;
+		padding: 0;
+		z-index: 5; 
+		margin: 0;
+		position: absolute;
+		pointer-events: none;
+		display:inline;
+		text-align: center;
+		
+	}
+}
