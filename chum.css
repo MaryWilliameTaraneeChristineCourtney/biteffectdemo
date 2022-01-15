@@ -14,7 +14,7 @@ html, body {
 #alpha {
 	top: 0;
 	width: 200%;
-    left: -50%;
+	left: -50%;
 	height: 100%;
 	padding: 0;
 	z-index: 5; 
