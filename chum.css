@@ -13,8 +13,8 @@ html, body {
 
 #alpha {
 	top: 0;
-	width: 400%;
-	left: -150%;
+	width: 100%;
+	left: 0%;
 	height: 100%;
 	padding: 0;
 	z-index: 5; 
