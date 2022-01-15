@@ -14,7 +14,7 @@ html, body {
 #alpha {
 	top: 0;
 	width: 100%;
-	left: 0%;
+	left: 0;
 	height: 100%;
 	padding: 0;
 	z-index: 5; 
@@ -43,7 +43,6 @@ iframe {
 	max-width: 100%;
 	max-height: 100%;
 }
-
 /* customizable snowflake styling */
 .snowflake {
 	  
@@ -83,6 +82,7 @@ iframe {
 .snowflakes {
 	display: inline;
 	pointer-events: none;
+    z-index: 10; 
 }
 
 

@@ -8,48 +8,52 @@
 </head>
 
 <body>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-		   setInterval(loopy,0);
+            setInterval(loopy,0);
 		});
         $(document).focusin(function(){
-		   setInterval(loopy,0);
+            setInterval(loopy,0);
 		});
         $(document).focusout(function(){
-		   setInterval(loopy,0);
+            setInterval(loopy,0);
 		});
         $(document).blur(function(){
-		   setInterval(loopy,0);
+            setInterval(loopy,0);
 		});
 		function loopy() {
 			$('.fademe').delay(5500).fadeOut(500).css("display","none").delay(1000).css("display","inline");
 		}
+        
+        $(function(){
+            $("#includedContent").load("Chum.html"); 
+        });
 	</script>
 	
 	<div id="alpha"></div>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.5/lottie.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.js" type="text/javascript"></script>
 	<script>
 		lottie.loadAnimation({
 		  container: document.getElementById('alpha'), // the dom element
 		  renderer: 'svg',
 		  loop: true,
 		  autoplay: true,
-		  path: 'Chum.json'
+		  path: 'https://assets6.lottiefiles.com/packages/lf20_4n16zo2d.json'
 		});
 		
 		lottie.play();
 	</script>	
 	
-	
-	
-	<iframe frameborder="0"
+<!--	
+    <iframe frameborder="0"
             scrolling="no"
             src="https://www.twitch.tv/embed/cs188/chat?parent=marywilliametaraneechristinecourtney.github.io"
             height="100%"
             width="100%">
     </iframe>
+-->
 	
 	
 	<div id="reloadme" class="snowflakes fademe">
@@ -103,9 +107,7 @@
 		<img src="OhYesL.png" width="36" height="36" class="snowflake" />
 		<img src="S.png" width="36" height="36" class="snowflake" />
 		<img src="C.png" class="snowflake" />
-
-		
-		
 </div>
+<div id="includedContent"></div>
 </body>
 </html>
